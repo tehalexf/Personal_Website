@@ -66,6 +66,9 @@ $( document ).ready(function() {
                 strSplit[j]  = fontArray[Math.floor((Math.random() * 11))];
             }
         }
+
+
+        
         var popped = arrays.pop();
         strSplit[popped[0]] = popped[1];
         doneArr.push(popped[0]);

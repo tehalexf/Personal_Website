@@ -54,6 +54,8 @@ var index = 0;
 var refreshIntervalId;
 
 $( document ).ready(function() {
+
+
     var str = $("#heading-scramble").text();
     var strSplit = str.split("");
 

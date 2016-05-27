@@ -68,7 +68,7 @@ $( document ).ready(function() {
         }
 
 
-        
+
         var popped = arrays.pop();
         strSplit[popped[0]] = popped[1];
         doneArr.push(popped[0]);
@@ -78,7 +78,11 @@ $( document ).ready(function() {
     refreshIntervalId = setInterval(function(){
         if (index < 12)
             $("#heading-scramble").text(finalArr[index++]);
-        else
+        else {
             clearInterval(refreshIntervalId);
+            $("#intro-text").slideDown('fast');
+            $("#intro-button").slideDown('fast');
+        }
+
     }, 80);
 });

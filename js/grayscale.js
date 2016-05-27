@@ -44,9 +44,9 @@ function shuffle(array) {
 
 
 
-var font = "!@#$%*()01";
-var arrays = [[0, "H"],[1, "E"],[2, "L"],[3, "L"],[4, "O"],[5, " "],
-            [6, "W"],[7, "O"],[8, "R"],[9, "L"],[10, "D"],[11, "!"]];
+var font = "010101001010101";
+var arrays = [[0, "h"],[1, "e"],[2, "l"],[3, "l"],[4, "o"],[5, " "],
+            [6, "w"],[7, "o"],[8, "r"],[9, "l"],[10, "d"],[11, "!"]];
 var fontArray = font.split("");
 var doneArr = [];
 var finalArr = [];
@@ -77,5 +77,5 @@ $( document ).ready(function() {
             $("#heading-scramble").text(finalArr[index++]);
         else
             clearInterval(refreshIntervalId);
-    }, 50);
+    }, 80);
 });
